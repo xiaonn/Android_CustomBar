@@ -1,0 +1,75 @@
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:orientation="vertical"
+            android:padding="0dp" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+
+        <RadioGroup
+            android:id="@+id/main_radiogroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="0dip" >
+
+            <RadioButton
+                android:id="@+id/RadioButton1"
+                style="@style/tab_item_background"
+                android:background="#FFFFF0"
+                android:drawableTop="@drawable/tab_button_1"
+                android:paddingBottom="5dip"
+                android:paddingTop="8dip"
+                android:text="生活服务"
+                android:textColor="#000000"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/RadioButton2"
+                style="@style/tab_item_background"
+                android:layout_weight="1.1"
+                android:background="#FFFFF0"
+                android:drawableTop="@drawable/tab_button_2"
+                android:paddingBottom="5dip"
+                android:paddingTop="8dip"
+                android:text="消息"
+                android:textColor="#000000"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/RadioButton3"
+                style="@style/tab_item_background"
+                android:layout_weight="1.1"
+                android:background="#FFFFF0"
+                android:drawableTop="@drawable/tab_button_3"
+                android:paddingBottom="5dip"
+                android:paddingTop="8dip"
+                android:text="我"
+                android:textColor="#000000"
+                tools:ignore="HardcodedText" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+</TabHost>

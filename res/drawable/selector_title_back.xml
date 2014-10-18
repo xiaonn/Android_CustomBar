@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Used for most UI about button -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true"><shape>
+
+            <!-- 按下时背景色 -->
+            <gradient android:angle="90" android:endColor="#CD5C5C" android:startColor="#CD5C5C" />
+
+            <corners android:radius="0dp" />
+
+            <!-- 按下时四周边线色 -->
+            <stroke android:width="0dp" android:color="#CD5C5C" />
+
+            <padding android:bottom="0dp" android:left="0dp" android:right="0dp" android:top="0dp" />
+        </shape></item>
+    <item><shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <!-- 默认背景色 -->
+            <gradient android:angle="0" android:endColor="@android:color/transparent" android:startColor="@android:color/transparent" />
+
+            <corners android:radius="0dp" />
+            <!-- 默认四周边线色 -->
+            <stroke android:width="0dp" android:color="@android:color/transparent" />
+
+            <padding android:bottom="0dp" android:left="0dp" android:right="0dp" android:top="0dp" />
+        </shape></item>
+
+</selector>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="48dp"
+    android:background="@drawable/navi_bk"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/title_text_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:minHeight="46dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/return_button"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/selector_title_back"
+            android:drawableLeft="@drawable/icon_arrow"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="返回"
+            android:textColor="#FFFFFF"
+            android:visibility="gone"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/navi_setting"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/icon_setting"
+        android:clickable="true"
+        android:contentDescription="@null"
+        android:maxHeight="48dp"
+        android:maxWidth="48dp"
+        android:minHeight="43dp"
+        android:minWidth="43dp"
+        android:scaleType="fitCenter"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/navi_right"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/navi_item_bk"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@+id/title_text_layout"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dip"
+        android:layout_marginTop="0.5dp"
+        android:background="@drawable/navi_draw_line"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:singleLine="true"
+        android:text="@string/app_name"
+        android:textAppearance="@android:style/TextAppearance.DialogWindowTitle"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
